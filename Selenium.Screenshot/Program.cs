@@ -15,11 +15,10 @@ namespace Selenium.Screenshot
             driver.Manage().Window.Maximize();
 
             ITakesScreenshot screen = (ITakesScreenshot)driver;
+            
             screen.GetScreenshot().SaveAsFile(@"G:\google.png");
 
-            //IWebElement upload = driver.FindElement(By.Id("google"));
-            //upload.SendKeys(@"C:\");
-
+           
         }
     }
 }
